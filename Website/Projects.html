@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-[#2E4959] min-h-screen flex flex-col">
+    <header class="flex gap-10 bg-slate-900 w-10xl h-14 items-center px-2 justify-between fixed top-0 w-full z-3">
+        <div class="logo bg-slate-900 text-[#C1C8CD] text-3xl">Jesse Braaksma</div>
+        <nav>
+            <ul class="flex gap-5 bg-slate-900 text-[#C1C8CD] text-3xl">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="Projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact me">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  <main class="flex-grow">
+      <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+  <img src="slides-img/Hacksclusive_game.png" style="width:60%; display:block; margin:auto;">
+  <div class="slide-caption text-center text-[#C1C8CD] mt-4">This is a project i worked on with a couple of other student. We were tasked with making a game to help kids understand the dangers of hacking and how easy it is with a playfull game within a week. We were sadly unable to finish it but still had a lot of fun making it.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+  <img src="slides-img/vr-prj.png" style="width:60%; display:block; margin:auto;">
+  <div class="slide-caption text-center text-[#C1C8CD] mt-4">This is a solo project i made in vr to test how to use vr in unity and how to interact with items.</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+<script src="carousel.js"></script>
+    </main>
+    <footer id="contact me" class="bg-[#0D1A26] text-[#C1C8CD] text-center pt-5 flex items-center justify-center">
+        <div>
+            <h1 class="text-4xl">Contacts</h1>
+            <div class="grid grid-cols-2 gap-8 w-35 h-14 mt-2 mb-4">
+            <a href="https://www.linkedin.com/in/jessebraaksma/" target="_blank">
+                <img src="logo's/Linkedin.webp" alt="Linkedin">
+            </a>
+            <a href="https://github.com/fiplezer" target="_blank">
+                <img src="logo's/GitHub.webp" alt="Git">
+             </a>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
